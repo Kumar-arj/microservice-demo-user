@@ -1,10 +1,10 @@
 pipeline {
     agent any
     
-    tools {
-        // Define the Maven tool to use
-        maven 'maven-3.8.4'
-    }
+    // tools {
+    //     // Define the Maven tool to use
+    //     // maven 'maven-3.8.4'
+    // }
     
     stages {
         stage('SCM Checkout') {
@@ -14,11 +14,11 @@ pipeline {
             }
         }
         
-        stage('Maven Build') {
-            steps {
-                // Run Maven build
-                sh 'mvn clean install'
-            }
-        }
+        // stage('Maven Build') {
+        //     steps {
+        //         // Run Maven build
+        //         sh 'mvn clean install'
+        //     }
+        // }
     }
 }
